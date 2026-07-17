@@ -31,12 +31,43 @@ else:
     print(msge)
 for keys, values in dict1.items():
     print(f'key: {keys} value: {values}')
-    '''
+    
 print(bool("hello"))
 print(bool(-10))
 
 for a in enumerate("hello"):
     print(a)
+'''
+'''
+def functions(name,age = 14):
+    return name,age
+
+entry = functions("Alice")
+print(entry)
+def bio(name,age):
+    return f"Hello my name is {name} and I am {age} years old"
+
+name = input("Enter your name: ")   
+age = input("Enter your age: ")
+bio = bio(name,age)
+print(bio)
+'''
+'''
+a = "helloo"
+if (n := len(a))>5:
+    print(f'taking too long {n}' )
+
+def stunames(name,*args, defaultname = "Unknown", **students):
+    for keys,student in students.items():
+        print(keys,student)
+
+stunames(name = "Alice", age = 25)
+'''
+
+
+
+
+
 
 
 
