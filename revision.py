@@ -1,3 +1,4 @@
+import functools
 '''
 basket = [1,2,3,4,2]
 print(basket.index(4))
@@ -63,6 +64,71 @@ def stunames(name,*args, defaultname = "Unknown", **students):
 
 stunames(name = "Alice", age = 25)
 '''
+'''
+class PlayerCharacter:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    def run(self):
+        print(f"runing {self.name}")
+player1 = PlayerCharacter("Alice", 25)
+player1.run()
+
+
+class big:
+    pass
+
+player = PlayerCharacter("Bob", 30)
+ob = big()
+print(type(ob))
+help(player)
+
+istrue = isinstance(player, PlayerCharacter)
+print(istrue)
+
+class small():
+    
+    def __init__(self,speciality):
+        self.speciality = speciality
+        print(speciality)
+class things(small):
+
+    def __init__(self, speciality, name):
+        super().__init__(speciality)
+        self.name = name
+        print(name)
+special = things("Python", "Alice")
+print(dir(special))
+'''
+def multi(x):
+    return x*x
+
+print(list(map(multi, [1,2,3,4,5])))
+
+def condi(items):
+    return items % 2 == 0
+
+print(list(filter(condi, [1,2,3,4,5])))
+
+my_list = [1,2,3,4,5]
+my2list = [6,7,8,9,10]
+print(list(zip(my_list, my2list)))
+
+def add(x,y):
+    return x+y
+
+print(functools.reduce(add, [1,2,3,4,5]))
+
+
+
+
+
+
+
+
+
+
+
 
 
 
