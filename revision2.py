@@ -24,7 +24,7 @@
 # thumb = cropped.thumbnail((400,200))
 # thumb.save('thumb.png','png')
 # thumb.show()
-
+'''
 import smtplib
 from email.message import EmailMessage
 
@@ -38,8 +38,17 @@ email.set_content("i am a student")
 with smtplib.SMTP(host = "smtp.gmail.com" ,port=587) as smtp:
     smtp.ehlo()
     smtp.starttls()
-    smtp.login("adityapasari227@gmail.com","meul epxn idml jcna")
+    smtp.login("adityapasari227@gmail.com","wsbf qpqc zxpo zydv")
     smtp.send_message(email)
     print("done")
+'''
+
+
+
+
+
+
+
+
 
 
